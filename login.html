@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo/favicon.ico" type="image/x-icon">
+    <title>Login Money Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .left {
+            background: linear-gradient(135deg, #E85D04, #FB8500);
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+        }
+        .left h2 {
+            margin-bottom: 10px;
+        }
+        .left p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .left button {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .left button:hover {
+            background: white;
+            color: #E85D04;
+        }
+        .right {
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 40px;
+        }
+        .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            color: #161A1D;
+        }
+        .input-group {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(135deg, #E85D04, #FB8500);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: linear-gradient(135deg, #FB8500, #E85D04);
+        }
+        .link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .link a {
+            color: #E85D04;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .left {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Estude sem sair de casa!</h2>
+            <p>Milhares de pessoas já estão aqui. Faça login e descubra um mundo de possibilidades.</p>
+            <a href="registrar.html"><button>Criar conta</button></a>
+        </div>
+        <div class="right">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo/favicon.png" alt="Logo"></a>
+                
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <button class="button">ENTRAR</button>
+            <div class="link">
+                <a href="password.html"><p style="font-size: 13px; text-align: center;
+                padding: 10px;">Esqueceu a senha?</p></a>
+                <p>Não possui conta? <a href="registrar.html">Crie uma agora!</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
